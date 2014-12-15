@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   root 'static_pages#home'
 
   match 'help', to: 'static_pages#help', via: 'get'
+=======
+root 'static_pages#home'
+
+match '/help', to: 'static_pages#help', via: 'get'
+>>>>>>> bootstrap
 
   resources :users
 
